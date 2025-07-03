@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todo-app-page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h2>my to do app</h2>
+    </header>
+    <div class="search-container">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchTask" placeholder="search you tasks here.....">
+    </div>
+    <div class="filter-buttons">
+  <button data-filter="all" class="filter-btn active">All</button>
+  <button data-filter="done" class="filter-btn">Done</button>
+  <button data-filter="not-done" class="filter-btn">Not Done</button>
+</div>
+    <div class="container">
+        <input type="text" id="newTask" placeholder="add new task here">
+        <br>
+        <button id="addButton">+ Add</button>
+        <p id="no-task-msg">you have no task yet. Add one above to get started</p>
+        <ul class="task"></ul>
+    </div>
+<script>
+  const taskInput = document.getElementById("newTask");
+  taskInput.addEventListener("focus", () => {
+    setTimeout(() => {
+      taskInput.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 300);
+  });
+</script>
+    <script src="script.js" defer></script>
+</body>
+</html>

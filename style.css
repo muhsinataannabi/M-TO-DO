@@ -1,0 +1,264 @@
+body{
+  margin: 0;
+  font-family: Sans-Serif;
+  background-color: #fff;
+}
+.onboarding{
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.slider{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.slide{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+.slide.active{
+  display: flex;
+}
+.slide img{
+  width: 60%;
+  height: auto;
+}
+.slide h2{
+  color: #6C4BFF;
+  text-align: center;
+  font-size: 1.7rem;
+}
+.start-btn{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 40px;
+  border-radius: 20px;
+  background-color: #6C4BFF;
+  color: #fff;
+  width: 50%;
+  border: none;
+}
+.start-btn a:link{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.start-btn a:visited{
+  color: #fff;
+}
+.task{
+  list-style: circle inside none;
+  padding: 0;
+}
+.done{
+  text-decoration: line-through;
+  color: grey;
+  opacity: 0.6;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Sans-Serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-bottom: 200px;
+}
+.container{
+  background-color: white;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+header{
+  width: 100%;
+  background-color: #6C4BFF;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  
+}
+#newTask{
+width: 100%;  
+padding: 12px 16px;
+border: 1px solid #ccc;
+margin-bottom: 10px;
+border-radius: 10px
+font-size: 1rem;
+box-sizing: border-box;
+outline: none;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+transition: border-color 0.3s ease,box-shadow 0.3s;
+margin: 10px auto;
+border-radius: 25px;
+display: block;
+}
+#newTask:focus{
+  background-color: #8c6fff;
+  box-shadow: 0 0 8px rgba(140,111,255,0.5);
+}
+#addButton {
+  display: block;
+  margin: 10px auto;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #8c6fff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#addButton:hover {
+  background-color: #755de0;
+  transform: scale(1.05);
+}
+
+#addButton:active {
+  transform: scale(0.95);
+}
+.task li{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+.task-text{
+  flex-grow: 1;
+  font-size: 1rem;
+}
+.done-btn{
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.delete-btn{
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  input#newTask {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  #addButton {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .task li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .done-btn,
+  .delete-btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+  #searchTask{
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+#no-task-msg{
+  text-align: center;
+  color: grey;
+  font-style: italic;
+  margin-top: 20px;
+}
+.search-container{
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+#searchTask{
+  width: 85%;
+  padding: 12px 40px 12px 15px;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: 1px solid grey;
+  outline: none;
+  transition: 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+}
+#searchTask:focus{
+  border: 2px solid #8c6fff;
+  box-shadow: 0 0 8px #8c6fff;
+  background-color: #fefeff;
+}
+.search-icon{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #8c6fff;
+  pointer-events: none;
+}
+.filter-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px auto;
+  flex-wrap: wrap;
+}
+.filter-btn{
+  padding: 8px 16px;
+  border: none;
+  background-color: #eee;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.filter-btn:hover{
+  background-color: #d2d2ff;
+}
+.filter-btn:active{
+  background-color: rgb(140,111,255);
+  color: #fff;
+}
