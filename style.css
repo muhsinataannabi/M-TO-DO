@@ -39,6 +39,7 @@ body{
   font-size: 1.7rem;
 }
 .start-btn{
+  display: none;
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -49,14 +50,7 @@ body{
   color: #fff;
   width: 50%;
   border: none;
-}
-.start-btn a:link{
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.5em;
-}
-.start-btn a:visited{
-  color: #fff;
+  z-index: 999;
 }
 .task{
   list-style: circle inside none;
