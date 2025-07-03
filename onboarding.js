@@ -1,22 +1,27 @@
+
 const slides = document.querySelectorAll('.slide');
+const startBtn = document.querySelector('.start-btn');
 let currentSlide = 0;
 
-function nextSlide() {
-  // Remove "active" class from current slide
-  slides[currentSlide].classList.remove("active");
-
-  // Move to next slide
-  currentSlide++;
-
-  // If we're past the last slide, stop OR loop back to first
-  if (currentSlide >= slides.length) {
-    currentSlide = 0; // <-- If you want to loop forever
-    // return;        // <-- Or stop forever after the last one
-  }
-
-  // Add "active" class to the next slide
-  slides[currentSlide].classList.add("active");
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (i === index) {
+      slide.classList.add("active");
+    }
+  });
 }
 
-// Slide changes every 3 seconds
+function nextSlide() {
+  currentSlide++;
+  if (currentSlide >= slides.length) {
+    currentSlide = 0;
+  }
+  showSlide(currentSlide);
+}
+
+// Show button always
+startBtn.style.display = "inline-block";
+
+showSlide(currentSlide);
 setInterval(nextSlide, 3000);
