@@ -266,10 +266,10 @@ display: block;
 }
 @media only screen and (min-width: 768px){
 .container{
-    width: 90%;
+    width: 95%;
     margin-top: 30px;
     border-radius: 30px;
-    max-width: 800px
+    max-width: 600px;
 }
 .task li{
     flex-direction: row;
@@ -278,41 +278,46 @@ display: block;
     font-size: 1.8rem;
 }
   input#newTask{
-      font-size: 1.4rem;
+      font-size: 2.2rem;
       padding: 20px;
   }  
   #addButton{
       padding: 20px 30px;
-      font-size: 1.4rem;
+      font-size: 1.5rem;
   }
- .done-Btn,
- .delete-Btn{
-     width: 40%;
+ .done-btn,
+ .delete-btn{
+     font-size:35px;
  }
  #searchTask{
-     width: 90%;
-     font-size: 1.4rem;
+     width: 85%;
+     font-size: 1.2rem;
+     padding: 30px 50px 30px 40px;
+     font-weight: bold;
  }
 .search-container{
-    width: 95%;
+    width: 90%;
     max-width: 600px;
-    padding:20px 50px 20px 30px
+    padding: 60px auto;
+}
+.filter-buttons{
+    flex-wrap: nowrap;
+    
 }
 .filter-btn{
-    width: 40%;
-    font-size: 1.5rem;
+    font-size: 40px;
 }
-header h2{
-    font-size: 3.5rem;
+h2{
+    font-size: 70px;
 }
 .slide img{
     width: 80%;
 }
 .slide h2{
-    font-size: 3rem;
+    font-size: 60px;
 }
 .slide p{
-    font-size: 1.8rem;
+    font-size: 35px;
 }
 .start-btn{
     width: 50%;
@@ -324,5 +329,9 @@ header h2{
 }
 .slide{
     top: -15%;
+}
+.search-icon{
+    right: 50px;
+    font-size: 3rem;
 }
   }
