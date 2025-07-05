@@ -292,12 +292,12 @@ display: block;
  #searchTask{
      width: 85%;
      font-size: 1.5rem;
-     padding: 30px 50px 30px 40px;
+     padding: 25px 40px 25px 30px;
      font-weight: bold;
  }
 .search-container{
     width: 90%;
-    max-width: 600px;
+    max-width: 500px;
     padding: 40px auto;
 }
 .filter-buttons{
@@ -320,7 +320,7 @@ header h2{
     font-size: 35px;
 }
 .start-btn{
-    width: 40%;
+    width: 30%;
     bottom: 20%;
     font-size: 2rem;
     text-decoration: none;
@@ -331,7 +331,7 @@ header h2{
     top: -15%;
 }
 .search-icon{
-    right: 50px;
+    right: 35px;
     font-size: 2rem;
 }
   }
